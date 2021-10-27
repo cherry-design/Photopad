@@ -1,0 +1,87 @@
+/******************************************************************************
+ *                                                                            *
+ *   Простая онлайн фотогалерея "Photopad" // Таблица стилей для печати       *
+ *   ----------------------------------------------------------------------   *
+ *   Copyright (C) 1998-2021 Studio "Cherry-Design"                           *
+ *   URL: https://www.cherry-design.ru/                                       *
+ *   E-mail: mike@cherry-design.ru                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+/* Отключаем ненужные блоки
+------------------------------------------------------------------------------*/
+
+#header, #main_menu, #user_menu, #tags, #copyright {
+    display: none;
+}
+
+/* Основное содержание
+------------------------------------------------------------------------------*/
+
+#content address {
+    margin: -15px 0px 15px 0px;
+}
+
+/* Основное содержание (оформление изображений)
+------------------------------------------------------------------------------*/
+
+#content p.image {
+    width: 600px;
+    border: 1px #c0c0c0 solid;
+}
+
+#content p.image img {
+    display: block;
+    padding: 8px;
+    text-align: left;
+    margin: auto;
+}
+
+#content p.thumbnail {
+    width: 140px;
+    height: 140px;
+    margin: 0px 10px 10px 0px;
+    border: 1px #c0c0c0 solid;
+}
+
+#content p.thumbnail img {
+    display: block;
+    margin: 5px auto;
+    border: none;
+}
+
+/* Основное содержание (галерея)
+------------------------------------------------------------------------------*/
+
+#content #gallery ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content #gallery ul li {
+    width: 140px;
+    height: 140px;
+    margin: 0px 10px 10px 0px;
+    border: 1px #c0c0c0 solid;
+    float: left;
+}
+
+#content #gallery ul li img {
+    display: block;
+    margin: 5px auto;
+    border: none;
+}
+
+#content #gallery ul li.empty {
+    display: none;
+}
+
+/* Основное содержание (навигация)
+------------------------------------------------------------------------------*/
+
+#content .navigation {
+    margin: 0px;
+    padding: 15px 0px 0px 0px;
+    clear: both;
+}

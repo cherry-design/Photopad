@@ -1,0 +1,14 @@
+DirectoryIndex index.php
+
+Options FollowSymLinks
+RewriteEngine Off
+
+# Отключаем обработку для загруженных фотографий
+RewriteRule ^images/.*$ - [L]
+    
+# Обрабатываем запрос первой страницы
+RewriteRule ^$ /gallery.php [QSA]
+
+# Обрабатываем странички фотографий и теги
+RewriteRule ^photo_([0-9]+)\.htm$ /gallery.php?action=view&id=$1 [QSA]
+RewriteRule ^([a-z0-9_-]+)\.htm$ /gallery.php?tag=$1 [QSA]

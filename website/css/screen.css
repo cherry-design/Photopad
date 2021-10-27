@@ -1,0 +1,321 @@
+/******************************************************************************
+ *                                                                            *
+ *   Простая онлайн фотогалерея "Photopad" // Таблица стилей для экрана       *
+ *   ----------------------------------------------------------------------   *
+ *   Copyright (C) 1998-2021 Studio "Cherry-Design"                           *
+ *   URL: https://www.cherry-design.ru/                                       *
+ *   E-mail: mike@cherry-design.ru                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+/* Общие настройки стиля
+------------------------------------------------------------------------------*/
+
+body {
+    width: 800px;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: "Arial", "Verdana", "Helvetica", "sans-serif";
+    font-size: 10pt;
+    background: #202020 url("../pic/background.gif") left top repeat-x;
+}
+
+a {
+    color: #666666;
+}
+
+ /* Верхняя шапка
+------------------------------------------------------------------------------*/
+
+#header {
+    width: 800px;
+    height: 87px;
+    background: #808080 url("../pic/header.jpg") left top no-repeat;
+}
+
+#header h1, #header p {
+    display: none;
+}
+
+ /* Основное меню
+------------------------------------------------------------------------------*/
+
+#main_menu {
+    width: 800px;
+    position: absolute;
+    padding: 0px;
+    margin: -74px 0px 0px -31px;
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 8pt;
+    text-align: right;
+    color: #ffffff;
+}
+
+#main_menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    float: right;
+}
+
+#main_menu ul li {
+    margin-left: 9px;
+    float: left;
+}
+
+#main_menu a {
+    padding: 2px 5px 4px 5px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main_menu a:hover {
+    padding: 1px 4px 3px 4px;
+    border: #ffffff 1px dotted;
+}
+
+/* Меню пользователя
+------------------------------------------------------------------------------*/
+
+#user_menu {
+    width: 800px;
+    position: absolute;
+    padding: 0px;
+    margin: -16px 0px 0px -25px;
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 8pt;
+    text-align: right;
+    color: #ffffff;
+}
+
+#user_menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#user_menu ul li {
+    padding-right: 10px;
+    display: inline;
+}
+
+#user_menu a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+#user_menu a:hover {
+    text-decoration: underline;
+} 
+
+/* Основное содержание
+------------------------------------------------------------------------------*/
+
+#content {
+    padding: 15px 24px 35px 24px;
+    margin: 0px;
+    font-family: "Arial", "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 10pt;
+    background: #ffffff url("../pic/content.jpg") left bottom no-repeat;
+    color: #000000;
+    min-height: 300px;
+    _height: 300px;
+}
+
+#content h1 {
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+#content h2 {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 15pt;
+    font-weight: normal;
+    clear: both;
+}
+
+#content address {
+    margin: -15px 0px 15px 0px;
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 8pt;
+    font-style: normal;
+    color: #666666;
+}
+
+#content p {
+    margin: 12px 0px 8px 0px;
+    padding: 0px;
+}
+
+#content pre {
+    background-color: #f0f0f0 !important;
+    border-top: 1px #c0c0c0 solid;
+    padding: 8px;
+    margin: 15px 0px;
+}
+
+/* Основное содержание (оформление изображений)
+------------------------------------------------------------------------------*/
+
+#content p.image {
+    width: 600px;
+    border: 1px #d0d0d0 solid;
+    margin: 0px 0px 25px 0px;
+}
+
+#content p.image img {
+    display: block;
+    padding: 11px 8px;
+    text-align: left;
+    margin: auto;
+}
+
+#content p.thumbnail {
+    width: 140px;
+    height: 140px;
+    margin: 0px 10px 10px 0px;
+    border: 1px #d0d0d0 solid;
+}
+
+#content p.thumbnail img {
+    display: block;
+    margin: 5px auto;
+    border: none;
+}
+
+/* Основное содержание (галерея)
+------------------------------------------------------------------------------*/
+
+#content #gallery {
+    width: 610px;
+    min-height: 450px;
+    _height: 450px;
+    padding: 0px;
+}
+
+#content #gallery ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content #gallery ul li {
+    width: 140px;
+    height: 140px;
+    margin: 0px 10px 10px 0px;
+    border: 1px #d0d0d0 solid;
+    float: left;
+}
+
+#content #gallery ul li img {
+    display: block;
+    margin: 5px auto;
+    border: none;
+}
+
+/* Основное содержание (теги)
+------------------------------------------------------------------------------*/
+
+#content #tags {
+    position: absolute;
+    top: 180px;
+    width: 120px;
+    margin: 0px 0px 0px 620px;
+    _margin: -16px 0px 0px 620px;
+}
+
+#content #tags h2 {
+    display: none;
+}
+
+#content #tags ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+#content #tags ul li {
+    margin: 0px;
+    padding: 1px 0px;
+}
+
+/* Основное содержание (навигация)
+------------------------------------------------------------------------------*/
+
+#content .navigation {
+    margin: 0px;
+    padding: 15px 0px 0px 0px;
+    clear: both;
+} 
+
+/* Основное содержание (количество фотографий в списке категорий)
+------------------------------------------------------------------------------*/
+
+#content .frequency {
+    color: #c0c0c0;
+} 
+
+/* Основное содержание (формы)
+------------------------------------------------------------------------------*/
+
+#content form  {
+    margin: 0px;
+    padding: 0px;
+}
+
+#content form dl {
+    margin: 26px 0px 16px 120px;
+    padding: 0px;
+}
+
+#content form dl dt {
+    position: absolute;
+    margin: 0px 0px 0px -120px;
+    padding: 5px 0px;
+    font-weight: normal;
+}
+
+#content form dl dd {
+    margin: 2px 0px 4px 0px;
+    padding: 2px 0px;
+}
+
+#content form p.button {
+    margin: 0px 0px 0px 120px;
+    padding: 0px;
+}
+
+/* Копирайты
+------------------------------------------------------------------------------*/
+
+#copyright {
+    width: 800px;
+    height: 47px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Tahoma", "Verdana", "Helvetica", "sans-serif";
+    font-size: 8pt;
+    background: #808080 url("../pic/copyright.jpg") left top no-repeat;
+    color: #ffffff;
+    clear: both;
+}
+
+#copyright ul {
+    margin: 0px;
+    padding: 5px 32px 0px 0px;
+    list-style-type: none;
+    text-align: right;
+}
+
+#copyright a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+}
