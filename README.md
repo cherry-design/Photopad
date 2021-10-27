@@ -23,7 +23,7 @@
 
 Демо-версия движка "Photopad" доступна по адресу:
 
-https://software.cherry-design.ru/demo/photopad/gallery.php
+https://software.cherry-design.ru/demo/photopad/
 
 Дополнительная информация о движке по адресу:
 
