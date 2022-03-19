@@ -4,14 +4,14 @@
 //                                                                           //
 //   Простая онлайн фотогалерея "Photopad" // Конфигурация                   //
 //   ----------------------------------------------------------------------  //
-//   Copyright (C) 1998-2021 web-studio "Cherry-Design"                      //
-//   URL: https://www.cherry-design.ru/                                      //
-//   E-mail: mike@cherry-design.ru                                           //
+//   Copyright (C) 1998-2022 Studio "Cherry-Design"                          //
+//   URL: https://www.cherry-design.com/                                     //
+//   E-mail: mike@cherry-design.com                                          //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
 // Текущая версия движка
-$globals["version"] = "v2.1.0";
+$globals["version"] = "v2.2.0";
 
 // Флаг показа числа фотографий в списке категорий
 $globals["frequency_flag"] = 0;
